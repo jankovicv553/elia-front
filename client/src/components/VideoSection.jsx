@@ -11,12 +11,12 @@ function VideoSection() {
       viewport={{ once: true }}
     >
       <h2 className="text-4xl font-semibold mb-6">
-        Pogledaj kako izgleda trening
+        Watch Our Training Session
       </h2>
       <div className="max-w-4xl mx-auto">
         <video controls className="w-full rounded-lg shadow-lg">
           <source src="/videos/sample.mp4" type="video/mp4" />
-          Vaš pretraživač ne podržava video tag.
+          Your browser does not support the video tag.
         </video>
       </div>
     </motion.section>

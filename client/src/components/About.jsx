@@ -10,11 +10,12 @@ function About() {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-4xl font-semibold mb-6">O našem studiju</h2>
+      <h2 className="text-4xl font-semibold mb-6">About Our Studio</h2>
       <p className="max-w-2xl mx-auto text-lg text-gray-700">
-        Elia Pilates Studio je prostor posvećen zdravlju, ravnoteži i snazi.
-        Naši treninzi kombinuju modernu tehniku i umirujuće okruženje kako bi
-        svaki klijent osetio celokupno fizičko i mentalno poboljšanje.
+        Elia Pilates Studio is a space dedicated to health, balance, and
+        strength. Our training sessions combine modern techniques with a calming
+        environment, helping each client experience complete physical and mental
+        well-being.
       </p>
     </motion.section>
   );
