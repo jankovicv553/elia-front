@@ -1,8 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaYoutube, FaWhatsapp } from "react-icons/fa";
 
 function Contact() {
+  const phoneNumber = "381659477115";
+  const message = "Zdravo, interesuje me više o vašim pilates treninzima!";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
   return (
     <motion.section
       className="py-20 px-6 bg-white-700 text-center text-black"
@@ -12,49 +17,30 @@ function Contact() {
       viewport={{ once: true }}
     >
       <h2 className="text-4xl font-semibold mb-6">Contact Us</h2>
-      <p className="text-lg mb-4">
-        Have a question? Send us a message or connect with us on social media.
+      <p className="text-lg mb-8">
+        Have a question? Reach out to us directly via WhatsApp.
       </p>
 
-      <form className="max-w-xl mx-auto text-left">
-        <input
-          type="text"
-          placeholder="Your name"
-          className="w-full mb-4 p-3 rounded border border-gray-300 text-black"
-        />
-        <input
-          type="email"
-          placeholder="Email address"
-          className="w-full mb-4 p-3 rounded border border-gray-300 text-black"
-        />
-        <textarea
-          rows="4"
-          placeholder="Your message"
-          className="w-full mb-4 p-3 rounded border border-gray-300 text-black"
-        />
-        <button
-          type="submit"
-          className="bg-gray-100 text-white-700 font-semibold px-6 py-3 rounded hover:bg-gray-200 transition"
+      {/* WhatsApp Button */}
+      <div className="flex justify-center">
+        <a
+          href={whatsappURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 bg-green-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-600 transition text-lg shadow-lg"
         >
-          Send Message
-        </button>
-      </form>
+          <FaWhatsapp className="text-2xl" />
+          Message us on WhatsApp
+        </a>
+      </div>
 
       {/* Social links */}
       <div className="flex justify-center mt-10 gap-6 text-2xl">
         <a
-          href="https://www.facebook.com/people/Elia-Elevated-Athleisure/61576227774900/"
+          href="https://www.instagram.com/elia_social_club/"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-gray-300"
-        >
-          <FaFacebookF />
-        </a>
-        <a
-          href="https://www.instagram.com/eliaelevatedathleisure/"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-gray-300"
+          className="hover:text-gray-500 transition"
         >
           <FaInstagram />
         </a>
@@ -62,7 +48,7 @@ function Contact() {
           href="https://www.tiktok.com/@elia.socialclub"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-gray-300"
+          className="hover:text-gray-500 transition"
         >
           <FaTiktok />
         </a>
@@ -70,7 +56,7 @@ function Contact() {
           href="https://www.youtube.com/@eliasocialclub"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-gray-300"
+          className="hover:text-gray-500 transition"
         >
           <FaYoutube />
         </a>
