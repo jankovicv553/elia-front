@@ -18,5 +18,33 @@
   "video": {
     "title": "Watch Our Training Session",
     "fallback": "Your browser does not support the video tag."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "membership_note": "The monthly membership is valid for 30 days from the day of payment.",
+    "refund_note": "We do not accept refunds.",
+    "transfer_note": "No other person can use your membership.",
+    "plans": [
+      {
+        "name": "Price per class",
+        "price": "2,500 RSD"
+      },
+      {
+        "name": "8 classes",
+        "price": "18,000 RSD"
+      },
+      {
+        "name": "12 classes",
+        "price": "25,000 RSD"
+      },
+      {
+        "name": "Personal training (1on1)",
+        "price": "4,800 RSD"
+      },
+      {
+        "name": "8 PT classes",
+        "price": "36,000 RSD"
+      }
+    ]
   }
 }

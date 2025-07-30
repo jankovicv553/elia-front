@@ -7,7 +7,7 @@ function About() {
 
   return (
     <motion.section
-      className="py-20 px-6 bg-white text-center"
+      className="py-20 px-6 bg-gray-50 text-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}

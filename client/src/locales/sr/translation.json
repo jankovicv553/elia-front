@@ -18,5 +18,33 @@
   "video": {
     "title": "Pogledajte naš trening",
     "fallback": "Vaš pretraživač ne podržava video tag."
+  },
+  "pricing": {
+    "title": "Cenovnik",
+    "membership_note": "Članarina važi 30 dana od dana uplate.",
+    "refund_note": "Ne postoji mogućnost povraćaja novca.",
+    "transfer_note": "Ne postoji mogućnost prebacivanja članarine na drugu osobu.",
+    "plans": [
+      {
+        "name": "Cena po treningu",
+        "price": "2.500 RSD"
+      },
+      {
+        "name": "8 termina",
+        "price": "18.000 RSD"
+      },
+      {
+        "name": "12 termina",
+        "price": "25.000 RSD"
+      },
+      {
+        "name": "Individualni trening (1 na 1)",
+        "price": "4.800 RSD"
+      },
+      {
+        "name": "8 individualnih termina",
+        "price": "36.000 RSD"
+      }
+    ]
   }
 }
