@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Dobrodošli u Elia Boutique Pilates Studio",
+    "subtitle": "Umetnost pokreta, snage i ravnoteže. Otkrijte svoj puni potencijal kroz naše vođene Pilates sesije."
+  },
+  "gallery": {
+    "title": "Galerija"
+  },
+  "about": {
+    "title": "O našem studiju",
+    "description": "Elia Pilates Studio je prostor posvećen zdravlju, ravnoteži i snazi. Naši treninzi kombinuju moderne tehnike sa umirujućim ambijentom, pomažući svakom klijentu da postigne potpuno fizičko i mentalno blagostanje."
+  },
+  "contact": {
+    "title": "Kontaktirajte nas",
+    "subtitle": "Imate pitanje? Pišite nam direktno putem WhatsApp-a.",
+    "whatsapp": "Pošaljite poruku na WhatsApp"
+  },
+  "video": {
+    "title": "Pogledajte naš trening",
+    "fallback": "Vaš pretraživač ne podržava video tag."
+  }
+}

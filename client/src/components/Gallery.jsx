@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import gallery1 from "../assets/images/gallery1.jpg";
 import gallery2 from "../assets/images/gallery2.jpg";
@@ -11,6 +12,7 @@ import gallery6 from "../assets/images/gallery3.jpg";
 const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 
 function Gallery() {
+  const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState(null);
   const containerRef = useRef(null);
   const sliderRef = useRef(null);
@@ -39,8 +41,9 @@ function Gallery() {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-4xl font-semibold text-center mb-10">Gallery</h2>
-
+      <h2 className="text-4xl font-semibold text-center mb-10">
+        {t("gallery.title")}
+      </h2>
       {/* Drag area */}
       <div
         ref={containerRef}

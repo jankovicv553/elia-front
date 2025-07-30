@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Welcome to Elia Boutique Pilates Studio",
+    "subtitle": "The art of movement, strength, and balance. Discover your full potential through our guided Pilates sessions."
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "about": {
+    "title": "About Our Studio",
+    "description": "Elia Pilates Studio is a space dedicated to health, balance, and strength. Our training sessions combine modern techniques with a calming environment, helping each client experience complete physical and mental well-being."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question? Reach out to us directly via WhatsApp.",
+    "whatsapp": "Message us on WhatsApp"
+  },
+  "video": {
+    "title": "Watch Our Training Session",
+    "fallback": "Your browser does not support the video tag."
+  }
+}
