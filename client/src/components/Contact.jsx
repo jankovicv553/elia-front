@@ -28,7 +28,12 @@ function Contact() {
           href={whatsappURL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 bg-green-500 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-600 transition text-lg shadow-lg"
+          className="flex items-center gap-3 
+            bg-green-500 text-white font-semibold px-6 py-3 rounded-full 
+            hover:bg-green-600 
+            active:bg-green-700 
+            focus:outline-none 
+            transition text-lg shadow-lg"
         >
           <FaWhatsapp className="text-2xl" />
           {t("contact.whatsapp")}

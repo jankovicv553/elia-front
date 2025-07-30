@@ -25,7 +25,10 @@ function Hero() {
 
       <motion.button
         onClick={toggleLanguage}
-        className="absolute top-6 left-6 z-20 text-sm md:text-base text-white border border-white px-3 py-1 rounded-full hover:bg-white hover:text-black transition duration-300 shadow-md backdrop-blur-sm"
+        className="absolute top-6 left-6 z-20 text-sm md:text-base text-white border border-white px-3 py-1 rounded-full 
+          hover:bg-white hover:text-black 
+          active:bg-white active:text-black 
+         transition duration-300 shadow-md backdrop-blur-sm"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.5 }}
