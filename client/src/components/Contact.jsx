@@ -33,7 +33,7 @@ function Contact() {
             hover:bg-green-600 
             active:bg-green-700 
             focus:outline-none 
-            transition text-lg shadow-lg"
+            transition duration-150 ease-in-out text-lg shadow-lg touch-manipulation"
         >
           <FaWhatsapp className="text-2xl" />
           {t("contact.whatsapp")}

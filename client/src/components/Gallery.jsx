@@ -34,15 +34,21 @@ function Gallery() {
   }, []);
 
   useEffect(() => {
+    const disableScroll = () => {
+      document.body.classList.add("no-scroll");
+    };
+
+    const enableScroll = () => {
+      document.body.classList.remove("no-scroll");
+    };
+
     if (selectedImage) {
-      document.body.style.overflow = "hidden";
+      disableScroll();
     } else {
-      document.body.style.overflow = "";
+      enableScroll();
     }
 
-    return () => {
-      document.body.style.overflow = "";
-    };
+    return () => enableScroll();
   }, [selectedImage]);
 
   return (

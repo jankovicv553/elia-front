@@ -9,3 +9,9 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+body.no-scroll {
+  overflow: hidden !important;
+  height: 100vh;
+  touch-action: none;
+}
