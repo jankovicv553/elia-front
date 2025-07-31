@@ -3,9 +3,18 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import "./i18n";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PricingPage from "./pages/PricingPage";
+import VideoPage from "./pages/VideoPage";
+import LocationPage from "./pages/LocationPage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/pricing" element={<PricingPage />} />
+      <Route path="/video" element={<VideoPage />} />
+      <Route path="/location" element={<LocationPage />} />
+    </Routes>
+  </BrowserRouter>
 );

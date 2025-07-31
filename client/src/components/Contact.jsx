@@ -13,7 +13,8 @@ function Contact() {
 
   return (
     <motion.section
-      className="py-20 px-6 bg-gray-50 text-center text-black"
+      id="contact"
+      className="py-20 px-6 bg-white text-center text-black"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}

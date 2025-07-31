@@ -6,7 +6,10 @@ function Pricing() {
   const plans = t("pricing.plans", { returnObjects: true });
 
   return (
-    <section className="py-20 px-6 bg-white text-center text-black">
+    <section
+      id="pricing"
+      className="py-20 px-6 bg-white text-center text-black"
+    >
       <h2 className="text-4xl font-semibold mb-10">{t("pricing.title")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {plans.map((plan, index) => (

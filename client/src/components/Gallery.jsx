@@ -53,6 +53,7 @@ function Gallery() {
 
   return (
     <motion.section
+      id="gallery"
       className="py-20 px-6 bg-gray-50 touch-pan-y"
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}

@@ -5,15 +5,16 @@ import Gallery from "./components/Gallery";
 import VideoSection from "./components/VideoSection";
 import Contact from "./components/Contact";
 import Pricing from "./components/Pricing";
+import MapSection from "./components/MapSection";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Hero />
       <About />
-      <Pricing />
       <Gallery />
-      <VideoSection />
       <Contact />
     </div>
   );

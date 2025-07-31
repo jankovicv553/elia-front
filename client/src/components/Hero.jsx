@@ -1,18 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import studioImage from "../assets/images/elia_home.jpeg";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
-  const { t, i18n } = useTranslation();
-
-  const toggleLanguage = () => {
-    const newLang = i18n.language === "sr" ? "en" : "sr";
-    i18n.changeLanguage(newLang);
-  };
+  const { t } = useTranslation();
 
   return (
-    <motion.div
+    <motion.section
+      id="hero"
       className="relative h-screen w-full flex items-center justify-center text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -23,19 +19,6 @@ function Hero() {
         style={{ backgroundImage: `url(${studioImage})` }}
       ></div>
 
-      <motion.button
-        onClick={toggleLanguage}
-        className="absolute top-6 left-6 z-20 text-sm md:text-base text-white border border-white px-3 py-1 rounded-full 
-          hover:bg-white hover:text-black 
-          active:bg-white active:text-black 
-          transition duration-150 ease-in-out text-lg shadow-lg touch-manipulation"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.5 }}
-      >
-        {i18n.language === "sr" ? "EN" : "SR"}
-      </motion.button>
-
       <div className="relative z-10 px-6">
         <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
           {t("hero.title")}
@@ -44,7 +27,7 @@ function Hero() {
           {t("hero.subtitle")}
         </p>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
 
