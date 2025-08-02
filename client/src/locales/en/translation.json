@@ -49,5 +49,25 @@
   },
   "location": {
     "title": "Find Us"
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "members": [
+      {
+        "name": "Nikola Janković",
+        "role": "Pilates Instructor",
+        "bio": "Opis"
+      },
+      {
+        "name": "Katarina Ostojić",
+        "role": "Pilates Instructor",
+        "bio": "Opis"
+      },
+      {
+        "name": "Ne znam",
+        "role": "Pilates Instructor",
+        "bio": "Opis"
+      }
+    ]
   }
 }

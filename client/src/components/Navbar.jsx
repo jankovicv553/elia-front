@@ -70,7 +70,6 @@ export default function Navbar() {
           />
         </button>
 
-        {/* DESKTOP MENU CENTER (optional) or RIGHT */}
         <ul className="hidden md:flex gap-6 items-center text-black font-medium">
           <li>
             <button onClick={() => handleScrollTo("hero")}>Home</button>
@@ -90,12 +89,28 @@ export default function Navbar() {
               {t("contact.title")}
             </button>
           </li>
+          <li>
+            <button onClick={() => handleScrollTo("map")}>
+              {t("location.title")}
+            </button>
+          </li>
           <li className="relative">
             <button onClick={() => setDropdownOpen(!dropdownOpen)}>
               Info ▼
             </button>
             {dropdownOpen && (
               <div className="absolute right-0 mt-2 w-44 bg-white shadow-lg rounded text-left z-50">
+                <NavLink
+                  to="/team"
+                  onClick={() => setDropdownOpen(false)}
+                  className={({ isActive }) =>
+                    `block px-4 py-2 hover:bg-gray-100 ${
+                      isActive ? "text-blue-500 font-semibold" : ""
+                    }`
+                  }
+                >
+                  {t("team.title")}
+                </NavLink>
                 <NavLink
                   to="/pricing"
                   onClick={() => setDropdownOpen(false)}
@@ -117,17 +132,6 @@ export default function Navbar() {
                   }
                 >
                   {t("video.title")}
-                </NavLink>
-                <NavLink
-                  to="/location"
-                  onClick={() => setDropdownOpen(false)}
-                  className={({ isActive }) =>
-                    `block px-4 py-2 hover:bg-gray-100 ${
-                      isActive ? "text-blue-500 font-semibold" : ""
-                    }`
-                  }
-                >
-                  {t("location.title")}
                 </NavLink>
               </div>
             )}
@@ -193,6 +197,19 @@ export default function Navbar() {
               >
                 {t("contact.title")}
               </button>
+              <button
+                onClick={() => handleScrollTo("map")}
+                className="text-left w-full"
+              >
+                {t("location.title")}
+              </button>
+              <NavLink
+                to="/team"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-left w-full"
+              >
+                {t("team.title")}
+              </NavLink>
               <NavLink
                 to="/pricing"
                 onClick={() => setMobileMenuOpen(false)}
@@ -207,13 +224,7 @@ export default function Navbar() {
               >
                 {t("video.title")}
               </NavLink>
-              <NavLink
-                to="/location"
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-left w-full"
-              >
-                {t("location.title")}
-              </NavLink>
+
               <button
                 onClick={() => {
                   toggleLanguage();

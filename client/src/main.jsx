@@ -6,7 +6,7 @@ import "./i18n";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PricingPage from "./pages/PricingPage";
 import VideoPage from "./pages/VideoPage";
-import LocationPage from "./pages/LocationPage";
+import TeamPage from "./pages/TeamPage";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/" element={<App />} />
       <Route path="/pricing" element={<PricingPage />} />
       <Route path="/video" element={<VideoPage />} />
-      <Route path="/location" element={<LocationPage />} />
+      <Route path="/team" element={<TeamPage />} />
     </Routes>
   </BrowserRouter>
 );

@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Pricing from "./components/Pricing";
 import MapSection from "./components/MapSection";
 import Navbar from "./components/Navbar";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Gallery />
       <Contact />
+      <MapSection />
     </div>
   );
 }
